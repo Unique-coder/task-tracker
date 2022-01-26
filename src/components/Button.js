@@ -1,4 +1,5 @@
 // import React from 'react'
+import PropTypes from "prop-types";
 
 const Button = ({ color, text, onClick }) => {
   return (
@@ -16,6 +17,11 @@ Button.defaultProps = {
   color: "aliceblue",
 };
 
+Button.propTypes = {
+  text: PropTypes.string,
+  color: PropTypes.string,
+  onClick: PropTypes.func,
+};
 // const btnStyle = {
 //   backgroundColor: color,
 // };
